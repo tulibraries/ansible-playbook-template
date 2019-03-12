@@ -1,0 +1,26 @@
+version: 2
+
+jobs:
+  ansible_review:
+    docker:
+      - image: circleci/python:3.7.2
+        environment:
+          PIPENV_VENV_IN_PROJECT: true
+    steps:
+      - checkout
+      - run:
+          command: |
+            sudo pip install pipenv
+            pipenv install
+      - run:
+          command: |
+            pipenv run ansible-review -q *playbook.yml
+      - run:
+          command: |
+            pipenv run ansible-lint *playbook.yml
+
+workflows:
+  version: 2
+  lint_playbooks:
+    jobs:
+      - ansible_review
