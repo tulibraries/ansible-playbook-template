@@ -1,0 +1,11 @@
+---
+# Required roles for this playbook.
+# If developing a role locally, you can locally symlink that
+# role's directory to the roles/ folder here for running plays.
+# To be added: pinning versions / releases / branches.
+
+# Example:
+# - src: https://github.com/tulibraries/ansible-role-server-bootstrap.git
+#   name: tulibraries.server-bootstrap
+#   path: roles
+

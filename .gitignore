@@ -1,0 +1,7 @@
+.vagrant
+.Vagrantfile
+www
+*.retry
+.vagrant
+keys
+downloads

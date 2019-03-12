@@ -1,0 +1,5 @@
+[server]
+app ansible_ssh_host=127.0.0.1 ansible_user=vagrant ansible_ssh_port=2222 ansible_ssh_private_key_file=.vagrant/machines/[PROJECT NAME]/virtualbox/private_key
+
+[all:children]
+server
