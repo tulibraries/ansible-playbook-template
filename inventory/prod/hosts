@@ -1,0 +1,5 @@
+[server]
+app ansible_ssh_host=[PROD IP] ansible_user=conan_the_deployer ansible_ssh_port=9229
+
+[all:children]
+server
