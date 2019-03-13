@@ -1,0 +1,16 @@
+#! /bin/bash
+
+PLAYBOOK_PATH=generated/ansible-playbook-$1
+if [ ! -d $PLAYBOOK_PATH ]; then
+  mkdir  $PLAYBOOK_PATH
+else
+  if [ ! $2 = "-force" ]; then
+    echo "The playbook directory already exists, cowardly refusing to overwrite it"
+    exit 1
+  fi
+fi
+cp -rf .circleci/ inventory/ roles/ $PLAYBOOK_PATH/
+find . -maxdepth 1 -type f -not -path './README.md' -exec cp '{}' $PLAYBOOK_PATH/ ';'
+cp templates/README.md $PLAYBOOK_PATH/
+
+echo "Your templated playbook is in $PLAYBOOK_PATH"
