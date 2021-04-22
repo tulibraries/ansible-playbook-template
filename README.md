@@ -4,7 +4,7 @@ This repository will help you generate a new Ansible playbook for a TU Libraries
 
 ## Generating a  new playbook
 
-Run the `./bin/generate_playbook` command passing in the name of the applicaito this will be a playbook for as a command line argument.
+Run the `./bin/generate_playbook` command passing in the name of the application this will be a playbook for as a command line argument.
 
 `./bin/generate_playbook some-application`
 
@@ -22,4 +22,4 @@ This generated playbook will contain:
 * a `.gitignore`
 
 
-For more detail on what that playbook contains, see the [README added as part of the new playbook](templates/README.md) 
+For more detail on what that playbook contains, see the [README added as part of the new playbook](templates/README.md)
