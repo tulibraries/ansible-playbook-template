@@ -1,4 +1,5 @@
 ---
+# This file should be rename requirements.yml in your new playbook.
 # Required roles for this playbook.
 # If developing a role locally, you can locally symlink that
 # role's directory to the roles/ folder here for running plays.
