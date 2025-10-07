@@ -15,7 +15,6 @@ This generated playbook will contain:
 * an `inventory` directory with vagrant, qa, staging, and prod inventories.
 * a `roles` directory where external roles will be stored (but not version controlled).
 * a `playbook.yml` for composing the main logic for your playbook.
-* a `.circleci` directory containing config for running basic tests on the playbook.
 * a `requirements.yml` for external roles that will be used by this playbook.
 * an `ansible.cfg` file that is common to TU Libraries playbooks
 * a `Pipfile` and `.python-version` for python requirements, like the ansible version to use
