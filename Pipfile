@@ -6,7 +6,7 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-ansible = "==10.7.0"
+ansible = "==12.1.0"
 ansible-lint = "*"
 cryptography = "*"
 
